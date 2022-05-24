@@ -73,7 +73,7 @@
           <td>{{data.Artist}}</td>
           <td>{{data.genre}}</td>
           <td>{{data.dur}}</td>
-          <td><i class="fa-solid fa-heart"></i></td>
+          <td><i (click)="addFav(data.id)" [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart"></i></td>
         </tr>
       </tbody>
     </table>

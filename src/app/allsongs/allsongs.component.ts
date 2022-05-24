@@ -22,6 +22,7 @@ export class AllsongsComponent implements OnInit {
     // this.datas=[];
 
   }
+  stylecolor:any;
   addList(){
        this.id1++;
        this.datas.push({
@@ -32,6 +33,18 @@ export class AllsongsComponent implements OnInit {
         genre:this.genre1
        }) 
        console.log(this.datas);
+  }
+  count=0;
+  addFav(id:number){
+    console.log(id);
+    this.count++;
+    if(this.count%2==0){
+      this.stylecolor='xyz';
+    }
+    else{
+      this.stylecolor='abc';
+      alert('Added to favourites');
+    }
   }
 
 }
