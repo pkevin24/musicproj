@@ -1,6 +1,14 @@
-#navbarSupportedContent{
+/* #navbarSupportedContent{
     margin-left: 240px;
+} */
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
 }
+.navbar-nav > li{
+    margin-left:30px;
+    margin-right:20px;
+  }
 .spacing{
     margin-left: 5vw;
 }
@@ -25,6 +33,10 @@
 li{
     font-family: 'Bebas Neue', cursive;
     font-weight: 800;
-    font-size: x-large;
+    font-size: large;
+
+}
+@media(max-width:786px)
+{
 
 }
