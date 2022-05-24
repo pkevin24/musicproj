@@ -9,10 +9,29 @@ import { DatasService } from '../datas.service';
 })
 export class AllsongsComponent implements OnInit {
   datas:{id:number,Songname:string,Artist:string,dur:string,genre:string}[]=[];
+  // datas:any;
   constructor(private dataService:DatasService) { }
+  id1:number=0;
+  Songname1:string="";
+  Artist1:string="";
+  dur1:string="";
+  genre1:string="";
 
   ngOnInit(): void {
     this.datas=this.dataService.datas;
+    // this.datas=[];
+
+  }
+  addList(){
+       this.id1++;
+       this.datas.push({
+         id:this.id1,
+        Songname:this.Songname1,
+        Artist:this.Artist1,
+        dur:this.dur1,
+        genre:this.genre1
+       }) 
+       console.log(this.datas);
   }
 
 }

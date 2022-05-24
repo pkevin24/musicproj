@@ -12,6 +12,7 @@ import { FavComponent } from './fav/fav.component';
 import { GenreComponent } from './genre/genre.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,15 @@ import { FormComponent } from './form/form.component';
     SongComponent,
     FavComponent,
     GenreComponent,
-    FormComponent
+    FormComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularTypewriterEffectModule
+    AngularTypewriterEffectModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

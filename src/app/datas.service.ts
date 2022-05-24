@@ -4,55 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DatasService {
-  datas=[{id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  },
-  {id:2,
-    Songname:'Old town road',
-    Artist:'Lil Nas X',
-    dur:'2:04 mins',
-    genre:'rock'
-  }
-  
+  datas=[
 ]
   constructor() { }
 }
