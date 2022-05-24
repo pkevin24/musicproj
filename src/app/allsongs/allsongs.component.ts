@@ -33,5 +33,17 @@ export class AllsongsComponent implements OnInit {
        }) 
        console.log(this.datas);
   }
-
+  stylecolor:any;
+  count=0;
+  addFav(id:number){
+    console.log(id);
+    this.count++;
+    if(this.count%2==0){
+      this.stylecolor='xyz';
+    }
+    else{
+      this.stylecolor='abc';
+      alert('Added to favourites');
+    }
+  }
 }
