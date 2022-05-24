@@ -22,6 +22,7 @@ export class AllsongsComponent implements OnInit {
     // this.datas=[];
 
   }
+  stylecolor:any;
   addList(){
        this.id1++;
        this.datas.push({
@@ -33,7 +34,8 @@ export class AllsongsComponent implements OnInit {
        }) 
        console.log(this.datas);
   }
-  stylecolor:any;
+
+
   count=0;
   addFav(id:number){
     console.log(id);
@@ -46,4 +48,5 @@ export class AllsongsComponent implements OnInit {
       alert('Added to favourites');
     }
   }
+
 }
