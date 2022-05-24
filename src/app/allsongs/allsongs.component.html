@@ -8,7 +8,7 @@
         Add Song</a>
     </div> -->
 
-<form class="form1" (submit)="addList()">
+<form class="form1" [formGroup]="addSong" (ngSubmit)="SaveData()">
   <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -22,22 +22,22 @@
       <div class="modal-body mx-2">
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Title" name="title" [(ngModel)]="Songname1">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Title" name="title" formControlName="Songname">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email"></label> -->
         </div>
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Artist" name="artist" [(ngModel)]="Artist1">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Artist" name="artist" formControlName="Artist">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email"></label> -->
         </div>
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Album" name="album" [(ngModel)]="genre1">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Album" name="album" formControlName="genre">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email"></label> -->
         </div>
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Duration" name="dur" [(ngModel)]="dur1">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Duration" name="dur" formControlName="dur">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email">Duration</label> -->
         </div>
 
@@ -66,14 +66,14 @@
           <th>Favourite</th>
         </tr>
       </thead>
-      <tbody *ngFor="let data of datas">
-        <tr>
+      <tbody >
+        <tr *ngFor="let data of datas">
           <td><a href="/song"><i class="fa-regular fa-circle-play"></i></a>{{data.id}}</td>
           <td>{{data.Songname}}</td>
           <td>{{data.Artist}}</td>
           <td>{{data.genre}}</td>
           <td>{{data.dur}}</td>
-          <td><i (click)="addFav(data.id)" [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart"></i></td>
+          <td><i (click)="addFav(data.ids)" [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart"></i></td>
         </tr>
       </tbody>
     </table>

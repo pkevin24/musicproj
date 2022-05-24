@@ -13,7 +13,8 @@ import { GenreComponent } from './genre/genre.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
-
+import {HttpClientModule} from '@angular/common/http';
+import {ReactiveFormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     AngularTypewriterEffectModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

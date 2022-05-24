@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatasService } from '../datas.service';
-
+import {FormGroup,FormControl} from '@angular/forms'
 @Component({
   selector: 'app-allsongs',
   templateUrl: './allsongs.component.html',
@@ -8,33 +8,33 @@ import { DatasService } from '../datas.service';
   providers:[DatasService]
 })
 export class AllsongsComponent implements OnInit {
-  datas:{id:number,Songname:string,Artist:string,dur:string,genre:string}[]=[];
-  // datas:any;
   constructor(private dataService:DatasService) { }
-  id1:number=0;
-  Songname1:string="";
-  Artist1:string="";
-  dur1:string="";
-  genre1:string="";
 
+  addSong=new FormGroup({
+    Songname:new FormControl(''),
+    Artist:new FormControl(''),
+    dur:new FormControl(''),
+    genre:new FormControl('')
+  })
+  datas:any=[];
   ngOnInit(): void {
-    this.datas=this.dataService.datas;
-    // this.datas=[];
+    
+    
+    this.dataService.getAllDetails().subscribe((allData)=>{
+      console.log(allData);
+      this.datas=allData;
+      console.log(this.datas)
+      
+    })
 
   }
+  
   stylecolor:any;
-  addList(){
-       this.id1++;
-       this.datas.push({
-         id:this.id1,
-        Songname:this.Songname1,
-        Artist:this.Artist1,
-        dur:this.dur1,
-        genre:this.genre1
-       }) 
-       console.log(this.datas);
+  SaveData(){
+    this.dataService.saveStudentData(this.addSong.value).subscribe((results)=>{
+      console.log(results);
+    });
   }
-
 
   count=0;
   addFav(id:number){
@@ -48,5 +48,6 @@ export class AllsongsComponent implements OnInit {
       alert('Added to favourites');
     }
   }
+  
 
 }

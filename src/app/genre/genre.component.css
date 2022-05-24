@@ -1,0 +1,14 @@
+.center {
+    display: flex;
+    justify-content: center;
+  }
+
+.song{
+    width: 75px;
+    height:75px;
+}
+form{
+    text-align: center;
+    padding-top: 20px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}

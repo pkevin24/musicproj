@@ -1,0 +1,18 @@
+{
+  "details": [
+    {
+      "Songname": "Kevin",
+      "Artist": "Prince",
+      "dur": "2",
+      "genre": "LIL",
+      "id": 1
+    },
+    {
+      "Songname": "Elvin",
+      "Artist": "Prince",
+      "dur": "2",
+      "genre": "Nas",
+      "id": 2
+    }
+  ]
+}
