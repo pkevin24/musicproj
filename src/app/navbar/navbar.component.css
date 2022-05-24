@@ -1,0 +1,30 @@
+#navbarSupportedContent{
+    margin-left: 240px;
+}
+.spacing{
+    margin-left: 5vw;
+}
+.logo{
+    width: 60px;
+}
+
+/* //updated */
+.active{
+    color:white;
+    border-bottom: .1rem solid red;
+    /* line-height: 10px; */
+  }
+  a:link {
+    text-decoration: none;
+    /* line-height: 15px; */
+    /* text-align: center; */
+
+    
+    
+  }
+li{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+    font-size: x-large;
+
+}

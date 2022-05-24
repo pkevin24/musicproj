@@ -1,0 +1,30 @@
+.center {
+    display: flex;
+    height: 670px;
+    /* background-color: #ff1124; */
+    justify-content: center;
+  }
+.box{
+    padding-top: 20px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    height: 550px;
+    /* padding-bottom: 20px; */
+}
+.box img{
+    justify-content: center;
+}
+img{
+    width:180px;
+    height: 180px;
+    justify-content: center;
+}
+h2{
+    padding-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 800;
+    /* font-size: small; */
+}

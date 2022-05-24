@@ -1,0 +1,6 @@
+.center {
+    display: flex;
+    /* background-color: #ff1124; */
+    justify-content: center;
+    padding-top: 20px;
+  }

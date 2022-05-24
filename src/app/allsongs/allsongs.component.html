@@ -1,0 +1,32 @@
+<div style="border: 5px solid #05445E; border: radius 10px;background-color:#a8d2fa;text-align: center;" id="header">
+    <h1 style="font-size:3.2rem;letter-spacing:0.8;color:black;font-weight: 900;font-family: 'Bebas Neue', cursive">All Songs</h1>
+</div>
+<div class="container">
+    <!-- <h2>Table</h2> -->
+    <div class="text-center">
+      <a href="/form" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm" style="padding-top:10px">
+        Add Song</a>
+    </div>
+    <div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Artist</th>
+          <th>Album</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let data of datas">
+        <tr>
+          <td><a href="/song"><i class="fa-regular fa-circle-play"></i></a>{{data.id}}</td>
+          <td>{{data.Songname}}</td>
+          <td>{{data.Artist}}</td>
+          <td>{{data.genre}}</td>
+          <td>{{data.dur}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
