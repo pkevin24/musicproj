@@ -69,12 +69,12 @@
       </thead>
       <tbody >
         <tr *ngFor="let data of datas">
-          <td><span><a href="/song"><i class="fa-regular fa-circle-play"></i></a></span>{{data.id}}</td>
+          <td><span (click)="songdetail(data.id)"><a><i class="fa-regular fa-circle-play"></i></a></span>{{data.id}}</td>
           <td>{{data.Songname}}</td>
           <td>{{data.Artist}}</td>
           <td>{{data.genre}}</td>
           <td>{{data.dur}}</td>
-          <td><button type="submit" (click)="addFav(data.id)"><i [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart">{{data.fav}}</i></button></td>
+          <td><button type="submit" (click)="addFav(data)" [ngStyle]="{'color':checkfav(data)==true?'red':'blue'}" ><i class="far fa-heart"></i></button></td>
           <!-- <td><button type="submit" (click)="delete(data.id)" class="delete">X</button></td> -->
           <td><span (click)="deleteSong(data.id)">Delete</span></td>
         </tr>

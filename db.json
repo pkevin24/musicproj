@@ -1,18 +1,20 @@
 {
   "details": [
     {
-      "Songname": "KP",
-      "Artist": "al",
-      "dur": "2:30",
-      "genre": "ba",
-      "id": 2
+      "Songname": "Kevin",
+      "Artist": "OR",
+      "dur": "2",
+      "genre": "KSI",
+      "fav": false,
+      "id": 4
     },
     {
       "Songname": "Kp",
-      "Artist": "Kevin",
-      "dur": "2",
-      "genre": "ALAL",
-      "id": 3
+      "Artist": "kev",
+      "dur": "3",
+      "genre": "kp",
+      "fav": true,
+      "id": 5
     }
   ]
 }

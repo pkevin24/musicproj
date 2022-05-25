@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SongdetService } from '../songdet.service';
 
 @Component({
   selector: 'app-song',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./song.component.css']
 })
 export class SongComponent implements OnInit {
-
-  constructor() { }
+  songs:any=[];
+  
+  constructor(private song:SongdetService) { }
 
   ngOnInit(): void {
+    this.songs=this.song.getSongDetails();
+    console.log(this.songs);
   }
 
 }
