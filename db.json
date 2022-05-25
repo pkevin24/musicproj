@@ -5,13 +5,14 @@
       "Artist": "Prince",
       "dur": "2",
       "genre": "LIL",
-      "id": 1
+      "id": 1,
+      "fav": false
     },
     {
-      "Songname": "Elvin",
-      "Artist": "Prince",
+      "Songname": "kp",
+      "Artist": "kp",
       "dur": "2",
-      "genre": "Nas",
+      "genre": "k",
       "id": 2
     }
   ]

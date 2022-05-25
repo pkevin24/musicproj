@@ -64,6 +64,7 @@
           <th>Album</th>
           <th>Duration</th>
           <th>Favourite</th>
+          <th></th>
         </tr>
       </thead>
       <tbody >
@@ -73,7 +74,8 @@
           <td>{{data.Artist}}</td>
           <td>{{data.genre}}</td>
           <td>{{data.dur}}</td>
-          <td><i (click)="addFav(data.ids)" [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart"></i></td>
+          <td><button type="submit" (click)="addFav(data.id)"><i [ngStyle]="{'color':stylecolor=='abc'?'red':'blue'}" class="far fa-heart">{{data.fav}}</i></button></td>
+          <td><button type="submit" (click)="delete(data.id)" class="delete">X</button></td>
         </tr>
       </tbody>
     </table>
