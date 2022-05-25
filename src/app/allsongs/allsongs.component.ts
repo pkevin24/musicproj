@@ -49,10 +49,7 @@ export class AllsongsComponent implements OnInit {
       alert('Added to favourites');
     }
   }
-  delete(idToRemove:any){
-    this.datas= this.datas.filter((item: { id: any; }) => item.id !== idToRemove);
-    // this.todos.splice(this.todos.findIndex((a: { id: any; }) => a.id === idToRemove.id) , 1)
-  }
+
   deleteSong(songId:any){
     // console.log(songId);
     this.dataService.deleteSong(songId).subscribe((result)=>{

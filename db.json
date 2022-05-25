@@ -1,35 +1,25 @@
 {
   "details": [
     {
-      "Songname": "Kevin",
-      "Artist": "Prince",
-      "dur": "2",
-      "genre": "LIL",
-      "id": 1,
-      "fav": true
+      "Songname": "Fitoor",
+      "Artist": "Kev",
+      "dur": "2:30",
+      "genre": "ALSK",
+      "id": 1
     },
     {
-      "Songname": "kp",
-      "Artist": "kp",
-      "dur": "2",
-      "genre": "k",
-      "id": 2,
-      "fav": false
+      "Songname": "KP",
+      "Artist": "al",
+      "dur": "2:30",
+      "genre": "ba",
+      "id": 2
     },
     {
-      "Songname": "kp",
-      "Artist": "kp",
+      "Songname": "Kp",
+      "Artist": "Kevin",
       "dur": "2",
-      "genre": "k",
-      "id": 3,
-      "fav": false
-    },{
-      "Songname": "kp",
-      "Artist": "kp",
-      "dur": "2",
-      "genre": "k",
-      "id": 4,
-      "fav": true
+      "genre": "ALAL",
+      "id": 3
     }
   ]
 }
