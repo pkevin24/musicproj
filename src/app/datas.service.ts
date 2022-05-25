@@ -16,4 +16,8 @@ export class DatasService {
     return  this.http.post(this.url,data);
     console.log(this.datas);
   }
+deleteSong(id:any){
+  return this.http.delete(`${this.url}/${id}`);
+}
+
 }

@@ -33,6 +33,7 @@ export class AllsongsComponent implements OnInit {
   SaveData(){
     this.dataService.saveStudentData(this.addSong.value).subscribe((results)=>{
       console.log(results);
+      this.ngOnInit();
     });
   }
 
@@ -51,6 +52,13 @@ export class AllsongsComponent implements OnInit {
   delete(idToRemove:any){
     this.datas= this.datas.filter((item: { id: any; }) => item.id !== idToRemove);
     // this.todos.splice(this.todos.findIndex((a: { id: any; }) => a.id === idToRemove.id) , 1)
+  }
+  deleteSong(songId:any){
+    // console.log(songId);
+    this.dataService.deleteSong(songId).subscribe((result)=>{
+      // console.log(result);
+      this.ngOnInit();
+    });
   }
   
 
