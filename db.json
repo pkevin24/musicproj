@@ -5,7 +5,7 @@
       "artist": "Green day",
       "dur": "2",
       "genre": "Rock",
-      "fav": false,
+      "fav": true,
       "id": 2
     },
     {
@@ -17,20 +17,44 @@
       "id": 4
     },
     {
-      "songname": "Kevin",
-      "artist": "K",
-      "dur": "2",
-      "genre": "ko",
-      "fav": false,
-      "id": 5
-    },
-    {
       "songname": "Kevinw",
       "artist": "kppp",
       "dur": "3",
       "genre": "kp",
       "fav": false,
       "id": 6
+    },
+    {
+      "songname": "Kev",
+      "artist": "kdk",
+      "dur": "2",
+      "genre": "kd",
+      "fav": false,
+      "id": 7
+    },
+    {
+      "songname": "Kevin",
+      "artist": "pll",
+      "dur": "2",
+      "genre": "Classic",
+      "fav": false,
+      "id": 8
+    },
+    {
+      "songname": "Muqalaa",
+      "artist": "AR rahman",
+      "dur": "2:45",
+      "genre": "Hiphop",
+      "fav": false,
+      "id": 9
+    },
+    {
+      "songname": "Breathless",
+      "artist": "Shankar",
+      "dur": "4",
+      "genre": "Classic",
+      "fav": true,
+      "id": 10
     }
   ]
 }

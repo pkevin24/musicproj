@@ -12,3 +12,7 @@ form{
     padding-top: 20px;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
+
+#bar{
+    width:150px;
+}

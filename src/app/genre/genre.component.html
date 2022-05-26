@@ -2,12 +2,11 @@
     <h1 style="font-size:3.2rem;letter-spacing:0.8;color:black;font-weight: 900;font-family: 'Bebas Neue', cursive">EXPLORE</h1>
 </div>
 <div class="container">
-    <form>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-md example">
-            <option selected>Open this select menu</option>
-            <option value="Rock">Rock</option>
-            <option value="Classic">Classic</option>
-            <option value="Melody">Melody</option>
+    <form [formGroup]="addGenre" (ngSubmit)="SaveData()">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-md example" formControlName="category" id="bar">
+            <!-- <option selected>Open this select menu</option> -->
+            <option *ngFor="let genre of genres" [value]="genre.names">{{genre.names}}</option>
+            
           </select>
           <button type="submit" class="btn btn-outline-success">Check</button>
     </form>
@@ -22,11 +21,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Anna</td>
-          <td>Lil Nas X</td>
-          <td>35</td>
+        <tr *ngFor="let data of list">
+          <td>{{data.id}}</td>
+          <td>{{data.songname}}</td>
+          <td>{{data.artist}}</td>
+          <td>{{data.dur}}</td>
         </tr>
       </tbody>
     </table>
