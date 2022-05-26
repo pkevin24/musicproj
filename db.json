@@ -7,6 +7,14 @@
       "genre": "LIL",
       "fav": false,
       "id": 1
+    },
+    {
+      "songname": "Boulevard of brocken Dreams",
+      "artist": "Green day",
+      "dur": "2",
+      "genre": "Rock",
+      "fav": false,
+      "id": 2
     }
   ]
 }
