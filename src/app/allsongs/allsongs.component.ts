@@ -35,6 +35,7 @@ export class AllsongsComponent implements OnInit {
   SaveData(){
     this.dataService.saveStudentData(this.addSong.value).subscribe((results)=>{
       console.log(results);
+      this.addSong.reset();
       this.ngOnInit();
     });
   }
