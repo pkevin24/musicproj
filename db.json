@@ -1,20 +1,28 @@
 {
   "details": [
     {
-      "songname": "Old town road",
-      "artist": "LIL nas",
-      "dur": "2",
-      "genre": "LIL",
-      "fav": false,
-      "id": 1
-    },
-    {
       "songname": "Boulevard of brocken Dreams",
       "artist": "Green day",
       "dur": "2",
       "genre": "Rock",
       "fav": false,
       "id": 2
+    },
+    {
+      "songname": "Kpww",
+      "artist": "kpw",
+      "dur": "2",
+      "genre": "kdq11",
+      "fav": false,
+      "id": 4
+    },
+    {
+      "songname": "Kevin",
+      "artist": "K",
+      "dur": "2",
+      "genre": "ko",
+      "fav": false,
+      "id": 5
     }
   ]
 }

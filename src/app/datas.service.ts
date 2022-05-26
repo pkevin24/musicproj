@@ -13,11 +13,12 @@ export class DatasService {
   }
   saveStudentData(data:any){
     console.log(data);
-    return  this.http.post(this.url,data);
+    return  this.http.post(this.url,data,{responseType:'text' as 'json'});
     console.log(this.datas);
   }
 deleteSong(id:any){
-  return this.http.delete(`${this.url}/${id}`);
+  // return this.http.delete(`${this.url}/${id}`);
+  return this.http.delete('http://localhost:8000/details/'+id);
 }
 
 
