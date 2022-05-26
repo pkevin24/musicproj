@@ -22,12 +22,12 @@
       <div class="modal-body mx-2">
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Title" name="title" formControlName="Songname">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Title" name="title" formControlName="songname">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email"></label> -->
         </div>
         <div class="md-form mb-3">
           <!-- <i class="fas fa-envelope prefix grey-text"></i> -->
-          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Artist" name="artist" formControlName="Artist">
+          <input type="text" id="defaultForm-email" class="form-control validate" placeholder="Artist" name="artist" formControlName="artist">
           <!-- <label data-error="wrong" data-success="right" for="defaultForm-email"></label> -->
         </div>
         <div class="md-form mb-3">
@@ -70,8 +70,8 @@
       <tbody >
         <tr *ngFor="let data of datas">
           <td><span (click)="songdetail(data.id)"><a [routerLink]="['/song',data.id]"><i class="fa-regular fa-circle-play"></i></a></span>{{data.id}}</td>
-          <td>{{data.Songname}}</td>
-          <td>{{data.Artist}}</td>
+          <td>{{data.songname}}</td>
+          <td>{{data.artist}}</td>
           <td>{{data.genre}}</td>
           <td>{{data.dur}}</td>
           <td><button type="submit" (click)="addFav(data)" [ngStyle]="{'color':checkfav(data)==true?'red':'blue'}" ><i class="far fa-heart"></i></button></td>

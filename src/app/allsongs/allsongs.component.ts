@@ -12,8 +12,8 @@ export class AllsongsComponent implements OnInit {
   constructor(private dataService:DatasService,private song:SongdetService) { }
 
   addSong=new FormGroup({
-    Songname:new FormControl(''),
-    Artist:new FormControl(''),
+    songname:new FormControl(''),
+    artist:new FormControl(''),
     dur:new FormControl(''),
     genre:new FormControl(''),
     fav:new FormControl(false)
