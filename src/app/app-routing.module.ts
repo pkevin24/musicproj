@@ -7,7 +7,7 @@ import { GenreComponent } from './genre/genre.component';
 import { HomeComponent } from './home/home.component';
 import { SongComponent } from './song/song.component';
 
-const routes: Routes = [{path:'',redirectTo:'home',pathMatch:'full'},{path:'home',component:HomeComponent},{path:'songs',component:AllsongsComponent},{path:'explore',component:GenreComponent},{path:'song',component:SongComponent},{path:'favourite',component:FavComponent},{path:'form',component:FormComponent}];
+const routes: Routes = [{path:'',redirectTo:'home',pathMatch:'full'},{path:'home',component:HomeComponent},{path:'songs',component:AllsongsComponent},{path:'explore',component:GenreComponent},{path:'song/:id',component:SongComponent,pathMatch:'full'},{path:'favourite',component:FavComponent},{path:'form',component:FormComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

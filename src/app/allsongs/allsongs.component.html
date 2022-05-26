@@ -69,7 +69,7 @@
       </thead>
       <tbody >
         <tr *ngFor="let data of datas">
-          <td><span (click)="songdetail(data.id)"><a><i class="fa-regular fa-circle-play"></i></a></span>{{data.id}}</td>
+          <td><span (click)="songdetail(data.id)"><a [routerLink]="['/song',data.id]"><i class="fa-regular fa-circle-play"></i></a></span>{{data.id}}</td>
           <td>{{data.Songname}}</td>
           <td>{{data.Artist}}</td>
           <td>{{data.genre}}</td>
