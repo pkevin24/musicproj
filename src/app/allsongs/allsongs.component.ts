@@ -16,7 +16,7 @@ export class AllsongsComponent implements OnInit {
     artist:new FormControl(''),
     dur:new FormControl(''),
     genre:new FormControl(''),
-    fav:new FormControl(false)
+    fav:new FormControl(0)
   })
   datas:any=[];
   ngOnInit(): void {
