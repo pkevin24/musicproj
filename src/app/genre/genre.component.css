@@ -16,3 +16,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 #bar{
     width:150px;
 }
+#horizontal-scroll {
+    overflow: hidden;
+    overflow-x: auto;
+    clear: both;
+    width: 100%;
+  }
+  .table{
+    min-width: rem-calc(640);
+  }

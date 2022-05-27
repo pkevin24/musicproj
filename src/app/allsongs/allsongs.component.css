@@ -18,3 +18,14 @@
     cursor: pointer;
     outline: inherit;
   }
+
+   tr:hover { background: rgb(253, 218, 218); } 
+   #horizontal-scroll {
+    overflow: hidden;
+    overflow-x: auto;
+    clear: both;
+    width: 100%;
+  }
+  .table{
+    min-width: rem-calc(640);
+  }
